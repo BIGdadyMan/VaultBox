@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/abc_action_bar_default_height_material"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/header"
+    app:contentInsetStartWithNavigation="0dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <!--android:background="@color/app_green"-->
+
+    <com.vb.vaultbox.Utills.MytextviewBold
+        android:id="@+id/text_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:lineSpacingExtra="-4dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</android.support.v7.widget.Toolbar>

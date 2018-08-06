@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:3:1-9:12
+INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:3:1-9:12
+INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:3:1-9:12
+INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:3:1-9:12
+INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:3:1-9:12
+INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:3:1-9:12
+INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:3:1-9:12
+	package
+		ADDED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:4:5-37
+		INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml
+		INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml
+	android:versionName
+		ADDED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:6:5-32
+		INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml
+		INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:5:5-29
+		INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml
+		INJECTED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml
+uses-sdk
+ADDED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:8:5-43
+	android:minSdkVersion
+		ADDED from F:\Android\Temp Projects\VaultBox\libraries\vpilibrary\AndroidManifest.xml:8:15-40

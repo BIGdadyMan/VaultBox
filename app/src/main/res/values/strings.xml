@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">VaultBox</string>
+    <!--<string name="facebook_app_id">229175181149108</string>-->
+    <string name="facebook_app_id">302071120331814</string>
+    <!--<string name="fb_login_protocol_scheme">fb229175181149108</string>-->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ok">OK</string>
+    <string name="cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="terms">By signing up,you agree to our Terms and services and \n Privacy Policy </string>
+    <string name="chose_category">Chose Category</string>
+    <string name="chose_subcategory">Chose SubCategory</string>
+    <string name="change_password">Change Password</string>
+    <string name="setting">Settings</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+
+
+    <string name="WidgetProvider_timestamp_today">Today</string>
+    <string name="WidgetProvider_timestamp_yesterday">Yesterday</string>
+    <string name="WidgetProvider_timestamp_hour_ago">%s hour ago</string>
+    <string name="WidgetProvider_timestamp_days_ago">%s days ago</string>
+    <string name="WidgetProvider_timestamp_hours_ago">%s hours ago</string>
+    <string name="WidgetProvider_timestamp_minutes_ago">%s minutes ago</string>
+    <string name="WidgetProvider_timestamp_just_now">Just now</string>
+    <string name="details">Listing Details</string>
+    <string name="bg">bg</string>
+    <string name="share">Share</string>
+    <string name="report_listing">Report Listing</string>
+    <string name="share_using">Share Using</string>
+
+    <string-array name="gender_arr">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

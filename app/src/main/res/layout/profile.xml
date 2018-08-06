@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/header">
+
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Share"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/like"
+            android:layout_toRightOf="@+id/share"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="User name"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/chat"
+            android:padding="7dp"
+            android:src="@drawable/like_white" />
+
+        <ImageView
+            android:id="@+id/chat"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="7dp"
+            android:src="@drawable/chat_white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_pannel"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/u_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/placeholder_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/u_image"
+            android:orientation="vertical">
+
+            <com.vb.vaultbox.Utills.MytextviewBold
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="administator"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:padding="7dp"
+            android:src="@drawable/settings" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/top"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.vb.vaultbox.Utills.MytextviewBold
+            android:id="@+id/offers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_border_side"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Offers Made"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.vb.vaultbox.Utills.MytextviewBold
+            android:id="@+id/followers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_border"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="0 Followers"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.vb.vaultbox.Utills.MytextviewBold
+            android:id="@+id/following"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_border_side"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="0 Following"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_margin="5dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/app_grey" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="0 Listings" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlc"
+        android:layout_margin="10dp"
+        android:background="@color/transparent">
+
+        <GridView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="1dp"
+            android:numColumns="2"
+            android:verticalSpacing="1dp"
+            tools:listitem="@layout/galleryadapter" />
+        <TextView
+            android:id="@+id/notfound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Sorry \n No Data Found"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

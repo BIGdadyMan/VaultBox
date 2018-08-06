@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/transparent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1.2"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter" />
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_imageview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginEnd="5dp"-->
+            <!--android:layout_weight="1.2">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/image"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="140dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@color/app_grey_light"-->
+                <!--android:scaleType="fitCenter" />-->
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.8">
+
+            <RelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/u_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:src="@color/app_grey_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/u_image"
+                    android:orientation="vertical">
+
+                    <com.vb.vaultbox.Utills.MytextviewBold
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="administator"
+                        android:textColor="@color/app_green"
+                        android:textSize="14sp" />
+
+                    <com.vb.vaultbox.Utills.MytextviewBold
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="10 miniutes ago"
+                        android:textColor="@color/app_grey_light"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <com.vb.vaultbox.Utills.MytextviewBold
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/u_image"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="administator"
+                    android:textColor="@color/app_green"
+                    android:textSize="14sp" />
+
+                <com.vb.vaultbox.Utills.MytextviewBold
+                    android:id="@+id/item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_toRightOf="@+id/u_image"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="S$20"
+                    android:textColor="@color/app_grey_light"
+                    android:textSize="12sp" />
+
+                <com.vb.vaultbox.Utills.MytextviewBold
+                    android:id="@+id/item_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_toRightOf="@+id/u_image"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="CDs,DVDs, and shdkal"
+                    android:textColor="@color/app_grey_light"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/btm"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/like" />
+
+                <com.vb.vaultbox.Utills.MytextviewBold
+                    android:id="@+id/like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/like"
+                    android:text="2"
+                    android:textColor="@color/app_grey_light"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/details"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/more" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

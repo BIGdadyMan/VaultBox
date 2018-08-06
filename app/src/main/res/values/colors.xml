@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#012b72</color>
+    <color name="colorPrimaryDark">#012b72</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!--<color name="app_green">#074655</color>-->
+    <!--<color name="app_grey">#838383</color>-->
+
+    <color name="app_green">#012b72</color>
+    <color name="app_grey">#8E938E</color>
+    <color name="app_grey_light">#AAAAAA</color>
+
+    <color name="app_blue">#2053A2</color>
+    <color name="app_pink">#DC167D</color>
+
+    <color name="app_orange">#FFDE00</color>
+    <!--<color name="app_orange">#F9671E</color>-->
+    <color name="app_yellow">#FFDE00</color>
+    <color name="app_line">#804b5c64</color>
+    <color name="app_blue_dark">#1C2C43</color>
+    <color name="app_blue_light">#467FC6</color>
+    <color name="app_light_grey">#E9E9E9</color>
+
+    <color name="newwhite">#fcedff</color>
+    <color name="app_red">#ff0000</color>
+    <color name="my_spinner_text_color">#ffffff</color>
+</resources>

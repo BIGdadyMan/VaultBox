@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/reli"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/header"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_bg_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="35dp"
+                android:visibility="gone"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/search_dark" />
+
+            <EditText
+                android:id="@+id/etxt_password"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/search"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Search location"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/search"
+                android:layout_height="35dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/chs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@+id/reli"
+        android:text="Chose Location" />
+
+    <ListView
+        android:id="@+id/category_list"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/location_items"
+        android:layout_below="@+id/chs" />
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        wheel:matProg_barColor="@color/colorPrimary"
+        wheel:matProg_progressIndeterminate="true" />
+
+</RelativeLayout>
+
+

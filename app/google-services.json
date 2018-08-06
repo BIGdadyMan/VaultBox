@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "281038868919",
+    "firebase_url": "https://engaged-oarlock-207708.firebaseio.com",
+    "project_id": "engaged-oarlock-207708",
+    "storage_bucket": "engaged-oarlock-207708.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281038868919:android:3e42595a07409b5e",
+        "android_client_info": {
+          "package_name": "com.vb.vaultbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281038868919-4g1as52rvhjmaslpgm91m8bt9nscqjfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vb.vaultbox",
+            "certificate_hash": "ce14ecbf9e31a986ca15913e4df09e951d980abb"
+          }
+        },
+        {
+          "client_id": "281038868919-8s1erkku92ngo6pv6t8vhhh6dg42pluv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0MESKkb6FsjRac_S2f-HhgjX2ELYWKiA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281038868919-8s1erkku92ngo6pv6t8vhhh6dg42pluv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "281038868919-bfq2qaj1aphvegm6f9qgqjv3kddl4rj4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.frestyle36.Vault-Box"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
